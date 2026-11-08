@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Movie Reviews</title></head>
+<body>
+    <h1>Movie Review Platform</h1>
+    <nav>
+        <a href="/">Home</a> | <a href="/add">Add a Movie</a> | <a href="/rankings">Rankings</a>
+    </nav>
+    <hr>
+    <h2>All Movies</h2>
+    <ul>
+        {% for movie in movies %}
+            <li><strong>{{ movie.title }}</strong> ({{ movie.genre }}) - Rating: {{ movie.rating }}/10</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

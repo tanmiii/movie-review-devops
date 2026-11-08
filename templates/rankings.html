@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Rankings</title></head>
+<body>
+    <h1>Top Rated Movies</h1>
+    <nav>
+        <a href="/">Home</a> | <a href="/add">Add a Movie</a> | <a href="/rankings">Rankings</a>
+    </nav>
+    <hr>
+    <ol>
+        {% for movie in movies %}
+            <li><strong>{{ movie.title }}</strong> - {{ movie.rating }}/10</li>
+        {% endfor %}
+    </ol>
+</body>
+</html>
