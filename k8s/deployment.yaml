@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: movie-app
-        image: Tanmayi/movie-app:latest
+        image: yentanmayi/movie-app:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
